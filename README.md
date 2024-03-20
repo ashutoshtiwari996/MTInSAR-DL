@@ -1,4 +1,4 @@
-# InSAR-based-pixel-selection
+# Multi-temporal InSAR-based-pixel-selection
 The program MTInSAR_convlstm_pixel_selection can be used for selecting PS pixels in multi-temporal InSAR processing. 
 
 Input: A stack of interferograms in .mat format (exported from WabInSAR software developed by Manoochehr Shirzaei). WabInSAR software is open access and can be downloaded from the following link:¶ https://sites.google.com/vt.edu/eadar-lab/software
@@ -17,7 +17,7 @@ The interferograms are divided into image patches of 100 by 100 pixels and then 
 	(ii) activate your virtualenv (if you create a separate virtual envcironment for this program)
 	(iii) run pip install -r requirements.txt 
 
-2. The input data for this program can be downloaded from the following link:
+2. A sample input data for this program can be downloaded from the following link:
 https://doi.org/10.7294/23478236
 
 3. The example dataset has two files: (i)interferogram stack and (ii) labels (measurement pixel or not). The file ph_im.mat contains time series of interforgrams generated from WabInSAR software v5.3. The dimension is w*h*n, where w=width, h=height and n=number of SAR interferograms. The file elpx.mat contains pixel locations in image (elpx_imloc) and row (elpx_loc) forms for the selected measurement points after the pixel selection step.
